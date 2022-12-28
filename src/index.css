@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #22272E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#root {
+  width: 100%;
+}
+/*
+Search button style
+*/
+.search {
+  margin-top: 20px;
+  width: 95%;
+  max-width: 48rem;  
+}
+.search h1 {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 20px;   
+}
+/*
+Results
+*/
+.search img {
+  margin-left: 5vmin;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.search .maininfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.search .maininfo h1 {
+  text-shadow: 1px 1px 20px white;  
+}
+.search .maininfo p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search input {
+  font-size: 16px;
+  padding: 16px;
+  border: 0px;
+  border-radius: 7px;
+  outline: 0px;
+  width: 100%;
+  background-color: #293039;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.search input[type="text"] {
+  width: 100%;
+}
+.search input[type="text"]::placeholder {
+  color: rgb(193, 192, 192);
+}
+/*
+Repo list
+*/
+.repos {
+  width: 95%;
+  max-width: 48rem;
+  text-align: start;
+  padding-bottom: 100px;
+}
+.repos ul {
+  margin: 0px;
+  padding: 0px;
+}
+.repos li {
+  border-radius: 7px;
+  background-color: #293039;
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px;
+  margin-left: 0px;
+  list-style-type: none;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.repos li, .maininfo{
+  width: 100%;
+  text-align: start;
+  margin-left: 0px;
+}
+/*
+Some style tags
+*/
+.date {
+  color: rgb(193, 192, 192);
+}
+/*
+Footer
+*/
+footer {
+  background-color: #293039;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 50px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
 }
